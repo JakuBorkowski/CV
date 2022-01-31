@@ -4,9 +4,8 @@ import WorkExp from "./MainContext/WorkExp";
 function MainContext() {
     return (
       <div className="MainContext">
-        <Education/>
         <WorkExp/>
-        
+        <Education/>
       </div>
     );
   }
