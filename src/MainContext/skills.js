@@ -21,19 +21,19 @@ function Skills() {
         {
           id:2,
           skillName:"CSS",
-          skillLvl:2,
+          skillLvl:4,
           icon:cssIcon
         },
         {
           id:3,
           skillName:"HTML",
-          skillLvl:3,
+          skillLvl:5,
           icon:htmlIcon
         },
         {
           id:4,
           skillName:"English",
-          skillLvl:7,
+          skillLvl:6,
           icon:eng
         },
      
@@ -43,15 +43,13 @@ function Skills() {
 
     return (
     
-    <ul>
+    <ul className="skills">
       {data.map(data=> <li className="conactLi" key={data.id}>
         <img className="skillImg" src={data.icon} alt={data.contactName}/>
-        <div className="skilNameAndSkillBarContener">
         <p>{data.skillName}</p>
        <ul className="skillBarUl">
          {skillBarId.map(skillBarId=><li key={skillBarId} className={skillBarId > data.skillLvl ? "emptyBar":"fullBar"}/>)}
        </ul>
-       </div>
       </li>)}
     </ul>
     );

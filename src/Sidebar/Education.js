@@ -1,4 +1,4 @@
-import Elemnt from "./Elemnt";
+import Elemnt from "../MainContext/Elemnt";
 
 function Education(props) {
   const data =[
