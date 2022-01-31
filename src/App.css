@@ -55,7 +55,7 @@ table {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color:#AFD991;
+    background-color:#D4F7EC;
 	font-family: 'Cairo', sans-serif;
 	font-weight: 900;
 }
@@ -65,8 +65,9 @@ width: 100%;
 height: calc(20% - 2vh);
 background-color: #355D6C ;
 border-radius: 0 0 20px 20px;
-color: #0C1324;
+color: #D4F7EC;
 display: flex;
+text-align: center;
 }
 .Sidebar{
 width: calc(35% - 1vh);
@@ -81,6 +82,7 @@ width: 65%;
 background-color: #347B98;
 border-radius: 40px 20px 20px 40px;
 color: #537B36;
+background-image: url("./img/background-g8629c47f4_1920.jpg");
 }
 
 .EmptySpace{
@@ -103,7 +105,7 @@ color: #537B36;
 }
 .Education , .WorkExp{
 	width: 80%;
-	background-color: #AFD991 ;
+	background-color: #D4F7EC ;
 	margin:  5% auto;
 	border-radius: 40px;
 }
@@ -126,17 +128,22 @@ span{
  width: 60%;
 }
 .contactImg , .skillImg{
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	margin-top: auto;
 	margin-bottom: auto;
+	background-color:#355D6C ;
+	padding: 2px;
+	border-radius: 50%;
 }
 .conactLi{
-	padding: 15px;
+	padding: 10px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	line-height: 40px;
+	line-height: 20px;
+	width: 80%;
+	margin: 0 auto;
 }
 .about{
 	padding: 15px;
@@ -146,9 +153,10 @@ span{
 	height: 10px;
 	border: 2px solid;
 	border-radius: 50%;
+	margin: auto 0;
 }
 .fullBar{
-	background-color: #AFD991;
+	background-color:#355D6C;
 }
 .skillBarUl{
 	display: flex;
@@ -173,4 +181,10 @@ span{
 	margin: auto;
 	font-weight: 900;
 	font-size: 70px;
+}
+
+.skills {
+	background-color: #D4F7EC ;
+	border-radius: 40px;
+	margin: 20px 10%;
 }
