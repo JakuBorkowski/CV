@@ -6,13 +6,13 @@ function Contact() {
         {
           id:0,
           contactName:"telefon",
-          contact:"000 000 000",
+          contact:"536 078 635",
           icon:cellphone
         },
         {
           id:1,
           contactName:"e-mail",
-          contact:"000 000 000",
+          contact:"jakub.bor2@gmail.com",
           icon:mail
     
         }

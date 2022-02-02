@@ -8,7 +8,7 @@ function Sidebar() {
   <>
   <div className="Sidebar">
    <Contact/>
-    <p className="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p className="about">Jestem "samoukiem". Zainteresowałem się branżą, ponieważ wielu moich znajomych - programistów sugerowało mi, że jest to praca, w której bym się odnalazł z moim sposobem myślenia i zawzięciem do rozwiązywania problemów. Okazuje się, że mieli rację, a programowanie sprawia mi przyjemność. Podczas nauki wspierali mnie wspomniani powyżej znajomi. Wielką radość sprawia mi to gdy mam okazję pokazać swój kod i usłyszeć że programista z kilkuletnim doświadczeniem sam by nie wpadł na takie rozwiązanie.</p>
     <Education/>
   </div>
     

@@ -9,13 +9,13 @@ function Skills() {
         {
           id:0,
           skillName:"React",
-          skillLvl:3,
+          skillLvl:4,
           icon:reactIcon
         },
         {
           id:1,
           skillName:"Javascript",
-          skillLvl:4,
+          skillLvl:5,
           icon:jsIcon
         },
         {
@@ -44,7 +44,7 @@ function Skills() {
     return (
     
     <ul className="skills">
-      {data.map(data=> <li className="conactLi" key={data.id}>
+      {data.map(data=> <li className="skillsLi" key={data.id}>
         <img className="skillImg" src={data.icon} alt={data.contactName}/>
         <p>{data.skillName}</p>
        <ul className="skillBarUl">

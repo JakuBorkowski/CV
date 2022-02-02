@@ -1,21 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+* {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,33 +6,29 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
 body {
-	line-height: 1;
+	margin: auto;
+    width: 21cm;
+    height: 29.7cm;
 }
-ol, ul {
+ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
+a{
+	text-decoration: none;
+	color: #D4F7EC;
+	padding: 6px;
+	border: #D4F7EC 2px solid;
+	border-radius: 40%
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
 .App{
-    margin: 0 auto;
-    width: 21cm;
+    margin: auto;
+	width: 50vw;
+    max-width: 21cm;
+	min-width: 770px;
     height: 29.7cm;
     display: flex;
     flex-direction: row;
@@ -58,8 +37,8 @@ table {
     background-color:#D4F7EC;
 	font-family: 'Cairo', sans-serif;
 	font-weight: 900;
+	line-height: 20px;
 }
-
 .Header{
 width: 100%;
 height: calc(20% - 2vh);
@@ -71,10 +50,11 @@ text-align: center;
 }
 .Sidebar{
 width: calc(35% - 1vh);
-height: 75%;
+height: calc(75% - 23px);
 background-color:#0C1324;
 border-radius: 20px 40px 40px 20px;
 color: #537B36;
+padding-top: 23px;
 }
 .MainContext{
 height: 75%;
@@ -84,7 +64,6 @@ border-radius: 40px 20px 20px 40px;
 color: #537B36;
 background-image: url("./img/background-g8629c47f4_1920.jpg");
 }
-
 .EmptySpace{
 	width: 100%;
 	height: 1vh;
@@ -96,14 +75,14 @@ background-image: url("./img/background-g8629c47f4_1920.jpg");
 	background-color:#355D6C ;
 	color:#0C1324 ;
 	border-radius: 20px 20px 0 0;
-
+	line-height: 12px;
 }
 .footerText{
 	margin-top: 5px;
 	padding: 5px;
 	text-align: center;
 }
-.Education , .WorkExp{
+.WorkExp{
 	width: 80%;
 	background-color: #D4F7EC ;
 	margin:  5% auto;
@@ -114,18 +93,21 @@ span{
 	color:#0C1324 ;
 }
 .Element{
-	padding: 20px;
+	padding: 10px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 .elementHeader{
-	padding-top: 10px;
+	padding: 15px 0;
 	text-align: center;
 	font-size: 30px;
 }
 .date{
- width: 60%;
+ width: 300px;
+}
+.jobDescryption{
+	width:700px
 }
 .contactImg , .skillImg{
 	width: 30px;
@@ -134,18 +116,26 @@ span{
 	margin-bottom: auto;
 	background-color:#355D6C ;
 	padding: 2px;
-	border-radius: 50%;
+	border-radius: 40%;
 }
-.conactLi{
+.skillsLi{
 	padding: 10px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	line-height: 20px;
+	line-height: 30px;
 	width: 80%;
 	margin: 0 auto;
 }
-.about{
+.conactLi{
+	padding: 10px;
+	justify-content: space-between;
+	line-height: 30px;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+.about , .Education{
 	padding: 15px;
 }
 .fullBar , .emptyBar{
@@ -168,23 +158,24 @@ span{
 	margin-left: auto;
 	margin-right: auto;
 }
-
-
 .facePhoto{
 	width: 190px;
 	height: 190px;
 	border-radius: 30px 60px;
 	margin: auto;
 }
-
 .name{
 	margin: auto;
 	font-weight: 900;
 	font-size: 70px;
 }
-
 .skills {
 	background-color: #D4F7EC ;
 	border-radius: 40px;
 	margin: 20px 10%;
+}
+.namePortfolioContener{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
 }

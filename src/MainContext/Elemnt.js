@@ -6,7 +6,7 @@ function Elemnt(props) {
             <li className="date">
                {props.data.date}
             </li>
-            <li className="data">
+            <li className="jobDescryption">
                 <p>
                     <span>{props.data.position}</span> w <span>{props.data.companyName}</span> {props.data.jobDescryption}
                 </p>
